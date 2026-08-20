@@ -1,0 +1,20 @@
+.cards-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+.cards{
+    background-color: #beb8b8;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 300px;
+    width: 400px;
+}
+
+
+.coracao{
+    margin-left: auto; 
+}
