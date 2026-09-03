@@ -1,7 +1,15 @@
-const coracao = document.querySelectorAll(".coracao");
+const coracoes = document.querySelectorAll(".coracao");
 
-function favoritar (){
-    console.log("CLICOU!!!")
-};
+function favoritar(){
+    console.log("cliquei", this);
+    this.classList.toggle("favoritado");
+     if ( this.classList.contains("favoritado") ) {
+        this.src = "/assets/coracao-cheio.png"
+    } else {
+        this.src = "/assets/coracao-vazado.png"
+    }
+}
 
-coracao.addEventListener("click", favoritar);
+coracoes.forEach( function(coracao) {
+    coracao.addEventListener("click", favoritar);
+});

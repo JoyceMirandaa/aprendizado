@@ -54,6 +54,7 @@ body{
 }
 
 .coracao{
+    cursor: pointer;
     object-fit: cover;
     background-color: #fff;
     border-radius: 5px;
@@ -65,8 +66,20 @@ body{
     top: 10px;
 }
 
+.coracao:hover{
+    background-color:rgb(251, 244, 176)f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(250, 243, 44, 0.3);
+}
+
+.favoritado{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(167, 162, 7, 0.3);
+    
+}
+
 .navbar{
-    display: flex;
+    display: flex;  
     flex-direction: row;
     justify-content: space-around;
     align-self: center;
